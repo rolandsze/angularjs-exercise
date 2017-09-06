@@ -1,0 +1,25 @@
+// Base
+$base-font-size: 18px; // Font size
+$base-font-size-mobile: 15px; // Font size on mobile
+$base-font-family: 'Raleway', sans-serif; // Font family
+$base-font-weight: 300; // Font weight
+
+// Colors
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-smoke: #333333;
+$color-concrete: #95A5A6;
+$color-cyan: #00FFFF;
+
+// Background colors
+$welcome-mask-background: transparentize($color-black, .8); // Welcome mask
+$overlay-background: transparentize($color-smoke, .1); // Overlay
+
+// Background image
+$welcome-background-image: '../image/background.jpg'; // Welcome
+
+// Overlay size
+$overlay-content-max-width: 680px; // Content maximum width
+
+// Mobile breakpoint
+$breakpoint-mobile: 480px;

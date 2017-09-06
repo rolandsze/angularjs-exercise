@@ -1,0 +1,26 @@
+.user-list
+{
+    &__row
+    {
+        margin: 1rem 0;
+
+        &--head
+        {
+            font-weight: 700;
+        }
+
+        &:not(:last-of-type)
+        {
+            border-bottom: 1px dotted $color-concrete;
+        }
+
+        @include clearfix;
+    }
+
+    &__cell
+    {
+        float: left;
+        width: 50%;
+        padding: 1rem;
+    }
+}

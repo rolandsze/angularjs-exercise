@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html,
+body,
+#applicationRoot
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+}
+
+@media only screen and (max-width: $breakpoint-mobile)
+{
+    body
+    {
+        font-size: $base-font-size-mobile;
+    }
+}

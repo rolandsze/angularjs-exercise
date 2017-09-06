@@ -1,0 +1,56 @@
+<!-- Overlay -->
+<div class="overlay" ng-controller="OverlayController" ng-show="(isVisible)">
+    <!-- Close button -->
+    <div class="overlay__close">
+        <button
+            ng-click="OverlayService.hide()"
+            class="button button--primary">
+            X
+        </button>
+    </div>
+
+    <!-- Content -->
+    <div class="overlay__content">
+        <div ng-controller="UserController">
+            <!-- Loading -->
+            <div ng-show="(isLoading)">
+                <p class="font--white">
+                    Loading...
+                </p>
+            </div>
+
+            <!-- Status: Successful -->
+            <div ng-show="(!isLoading && !errorHappened)">
+                <h1 class="font--white">Users ({{users.length}})</h1>
+
+                <!-- List -->
+                <div class="user-list">
+                    <!-- List head -->
+                    <div class="user-list__row user-list__row--head">
+                        <div class="user-list__cell font--white">Name</div>
+                        <div class="user-list__cell font--white">Website</div>
+                    </div>
+
+                    <!-- List items -->
+                    <div class="user-list__row" ng-repeat="user in users">
+                        <div class="user-list__cell font--white">
+                            <strong>{{user.name}}</strong>
+                        </div>
+                        <div class="user-list__cell font--white">
+                            <a href="http://{{user.website}}" class="link--cyan" title="Visit the website">
+                                {{user.website}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status: Error -->
+            <div ng-show="(!isLoading && errorHappened)">
+                <p class="font--white">
+                    We could not fetch the data, please try again later close this overlay.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

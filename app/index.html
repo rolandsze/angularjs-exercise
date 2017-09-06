@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS Exercise</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/js/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="appConfig.js"></script>
+    <script src="services/UserService.js"></script>
+    <script src="services/OverlayService.js"></script>
+    <script src="controllers/UserController.js"></script>
+    <script src="controllers/OverlayController.js"></script>
+</head>
+<body>
+<div id="applicationRoot" ng-app="myApp">
+    <!-- Welcome -->
+    <ng-include src="'views/Welcome.html'"></ng-include>
+
+    <!-- User overlay -->
+    <ng-include src="'views/UserOverlay.html'"></ng-include>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.link
+{
+    &--cyan
+    {
+        color: $color-cyan;
+
+        &:hover
+        {
+            color: darken($color-cyan, 10);
+        }
+    }
+}

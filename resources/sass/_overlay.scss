@@ -23,3 +23,11 @@
         right: 1.6rem;
     }
 }
+
+@media only screen and (max-width: $breakpoint-mobile)
+{
+    .overlay
+    {
+        padding: 2rem;
+    }
+}

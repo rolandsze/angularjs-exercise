@@ -403,13 +403,15 @@ body,
 #applicationRoot {
   height: 100%; }
 
+html {
+  font-size: 18px; }
+
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
   font-weight: 300; }
 
 @media only screen and (max-width: 480px) {
-  body {
+  html {
     font-size: 15px; } }
 
 h1 {
@@ -487,6 +489,10 @@ h1 {
     position: fixed;
     top: 1.6rem;
     right: 1.6rem; }
+
+@media only screen and (max-width: 480px) {
+  .overlay {
+    padding: 2rem; } }
 
 .user-list__row {
   margin: 1rem 0; }

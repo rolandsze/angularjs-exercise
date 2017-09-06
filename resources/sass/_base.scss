@@ -10,16 +10,20 @@ body,
     height: 100%;
 }
 
+html
+{
+    font-size: $base-font-size;
+}
+
 body
 {
     font-family: $base-font-family;
-    font-size: $base-font-size;
     font-weight: $base-font-weight;
 }
 
 @media only screen and (max-width: $breakpoint-mobile)
 {
-    body
+    html
     {
         font-size: $base-font-size-mobile;
     }
